@@ -1,25 +1,25 @@
 $font-header: "Roboto", sans-serif;
 
 .welcome {
-  margin-left: 1em;
+  margin: 1em 1em;
   &__h1 {
     font: 100% $font-header;
     font-size: 42px;
     font-weight: 700;
     margin: 0.8em 0;
-    padding: 0;
+    padding: 0.2em;
   }
   &__h2 {
     font: 100% $font-header;
     font-size: 34px;
     margin: 0.8em 0;
-    padding: 0;
+    padding: 0.2em;
   }
   &__paragraph {
     font: 100% $font-header;
     font-size: 22px;
     margin: 0.8em 0;
-    padding: 0;
+    padding: 0.2em;
   }
   &__photo {
     overflow: hidden;
@@ -30,7 +30,7 @@ $font-header: "Roboto", sans-serif;
       height: auto;
       max-width: 100%;
       max-width: 100%;
-      margin-top: 100px;
+      margin-top: 140px;
     }
     &__front {
       z-index: 9999;
@@ -46,6 +46,9 @@ $font-header: "Roboto", sans-serif;
   .small__screen {
     display: flex;
     justify-content: center;
+  }
+  .welcome__photo {
+    margin: auto;
   }
   #kongo1 {
     margin-top: 10px;

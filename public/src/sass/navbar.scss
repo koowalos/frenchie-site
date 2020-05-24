@@ -35,7 +35,7 @@ header {
     display: flex;
     justify-content: center;
     img {
-      margin: 2em 0;
+      margin: 1em 0;
       width: 700px;
     }
   }
@@ -55,13 +55,13 @@ header {
 
   @media only screen and (max-width: 600px) {
     .header__navbar__menu {
-      background-color: #2b8029;
+      background: linear-gradient(#ff3535, #960303);
       margin-top: -8px;
       margin-left: 40px;
       // display: flex;
       opacity: 0;
       padding: 10px;
-      width: 180px;
+      width: 200px;
       position: absolute;
       -webkit-transition: all 0.5s linear;
       -moz-transition: all 0.5s linear;
@@ -106,13 +106,13 @@ header {
     .toggle:after {
       content: "\2261";
       display: flex;
+      justify-content: center;
       width: 50px;
       margin: 10px 0 10px 40px;
-      padding: 10px 50px 10px 40px;
-      background: #2b8039;
+      padding: 10px;
+      background: #f11c1c;
       -webkit-border-radius: 2px;
       border-radius: 2px;
-      text-align: center;
       font-size: 24px;
       color: #ffffff;
       -webkit-transition: all 0.5s linear;
@@ -125,7 +125,7 @@ header {
     }
 
     .toggle:hover:after {
-      background: #203f07;
+      background: #c51717;
     }
 
     #toggle:checked + div .toggle:after {
