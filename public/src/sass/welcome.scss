@@ -17,21 +17,20 @@ $font-header: "Roboto", sans-serif;
   }
   &__paragraph {
     font: 100% $font-header;
-    font-size: 26px;
+    font-size: 22px;
     margin: 0.8em 0;
     padding: 0;
   }
   &__photo {
-    position: relative;
+    overflow: hidden;
     margin: 0 1em 0 0;
     max-width: 400px;
     img {
-      position: absolute;
-      top: 140px;
-      left: 0;
-      overflow: hidden;
-      width: 380px;
+      width: 400px;
       height: auto;
+      max-width: 100%;
+      max-width: 100%;
+      margin-top: 100px;
     }
     &__front {
       z-index: 9999;
@@ -40,5 +39,15 @@ $font-header: "Roboto", sans-serif;
     &:hover > &__front {
       opacity: 0;
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .small__screen {
+    display: flex;
+    justify-content: center;
+  }
+  #kongo1 {
+    margin-top: 10px;
   }
 }

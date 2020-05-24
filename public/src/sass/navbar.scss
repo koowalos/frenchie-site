@@ -4,18 +4,18 @@ $a-tags: "a:link, a:visited";
 $a-tags-hover: "a:hover, a:active";
 
 header {
-  nav {
+  .header__navbar {
+    position: relative;
     border-top: 1px solid #040404;
     border-bottom: 1px solid #004400;
-    ul {
+    &__menu {
       margin: 1em;
       padding: 0;
       display: flex;
       justify-content: space-evenly;
-      flex-direction: row;
+      flex-flow: row wrap;
       list-style-type: none;
       li {
-        display: flex;
         #{$a-tags} {
           font: 100% $font-stack;
           color: $primary-color;
@@ -37,6 +37,99 @@ header {
     img {
       margin: 2em 0;
       width: 700px;
+    }
+  }
+
+  #toggle,
+  .toggle {
+    display: none;
+  }
+  .clearfix:before,
+  .clearfix:after {
+    display: table;
+    content: "";
+  }
+  .clearfix:after {
+    clear: both;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .header__navbar__menu {
+      background-color: #2b8029;
+      margin-top: -8px;
+      margin-left: 40px;
+      // display: flex;
+      opacity: 0;
+      padding: 10px;
+      width: 180px;
+      position: absolute;
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+    }
+    .header__navbar__menu > li {
+      display: block;
+      width: 100%;
+      margin: 0;
+    }
+    .header__navbar__menu > li > a {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    .toggle {
+      display: block;
+      position: relative;
+      cursor: pointer;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    #toggle:checked + div .header__navbar__menu {
+      display: block;
+      opacity: 1;
+    }
+  }
+
+  .toggle {
+    z-index: 1;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .header__navbar__menu {
+      z-index: 1;
+    }
+    .toggle:after {
+      content: "\2261";
+      display: flex;
+      width: 50px;
+      margin: 10px 0 10px 40px;
+      padding: 10px 50px 10px 40px;
+      background: #2b8039;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      text-align: center;
+      font-size: 24px;
+      color: #ffffff;
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .toggle:hover:after {
+      background: #203f07;
+    }
+
+    #toggle:checked + div .toggle:after {
+      content: "\2261";
     }
   }
 }

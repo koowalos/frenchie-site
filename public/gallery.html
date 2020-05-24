@@ -35,14 +35,22 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <nav>
-              <ul>
+            <input type="checkbox" id="toggle" />
+            <div class="header__navbar">
+              <label
+                for="toggle"
+                class="toggle"
+                data-open="Main Menu"
+                data-close="Close Menu"
+                onclick
+              ></label>
+              <ul class="header__navbar__menu">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Join the club</a></li>
                 <li><a href="#">About us</a></li>
               </ul>
-            </nav>
+            </div>
           </div>
         </div>
       </div>
@@ -296,6 +304,6 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./assets/js/script.min.js"></script>
+    <script type="text/javascript" src="./src/js/modal.js"></script>
   </body>
 </html>
