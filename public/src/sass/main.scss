@@ -1,0 +1,30 @@
+@import "navbar";
+@import "welcome";
+@import "footer";
+@import "gallery";
+
+.col-xs,
+.col-xs-6,
+.col-xs-12 {
+  border: 1px solid red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 5em 0;
+  background: url("../images/background.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+}

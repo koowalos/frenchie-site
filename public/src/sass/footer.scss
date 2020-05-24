@@ -1,0 +1,11 @@
+$font-stack: "Indie Flower", cursive;
+footer {
+  .wrap {
+    border-top: 1px solid #040404;
+  }
+  p {
+    text-align: center;
+    font: 100% $font-stack;
+    font-weight: 900;
+  }
+}

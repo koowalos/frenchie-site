@@ -1,0 +1,42 @@
+$font-stack: "Nanum Brush Script", cursive;
+$primary-color: #040404;
+$a-tags: "a:link, a:visited";
+$a-tags-hover: "a:hover, a:active";
+
+header {
+  nav {
+    border-top: 1px solid #040404;
+    border-bottom: 1px solid #004400;
+    ul {
+      margin: 1em;
+      padding: 0;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      list-style-type: none;
+      li {
+        display: flex;
+        #{$a-tags} {
+          font: 100% $font-stack;
+          color: $primary-color;
+          font-size: 1.8em;
+          text-transform: uppercase;
+          font-weight: 700;
+          text-decoration: none;
+          font-weight: 900;
+        }
+        #{$a-tags-hover} {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    img {
+      margin: 2em 0;
+      width: 700px;
+    }
+  }
+}

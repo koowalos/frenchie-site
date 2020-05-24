@@ -1,0 +1,44 @@
+$font-header: "Roboto", sans-serif;
+
+.welcome {
+  margin-left: 1em;
+  &__h1 {
+    font: 100% $font-header;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0.8em 0;
+    padding: 0;
+  }
+  &__h2 {
+    font: 100% $font-header;
+    font-size: 34px;
+    margin: 0.8em 0;
+    padding: 0;
+  }
+  &__paragraph {
+    font: 100% $font-header;
+    font-size: 26px;
+    margin: 0.8em 0;
+    padding: 0;
+  }
+  &__photo {
+    position: relative;
+    margin: 0 1em 0 0;
+    max-width: 400px;
+    img {
+      position: absolute;
+      top: 140px;
+      left: 0;
+      overflow: hidden;
+      width: 380px;
+      height: auto;
+    }
+    &__front {
+      z-index: 9999;
+      transition: opacity 0.5s linear;
+    }
+    &:hover > &__front {
+      opacity: 0;
+    }
+  }
+}
