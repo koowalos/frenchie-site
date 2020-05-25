@@ -54,3 +54,23 @@ $font-header: "Roboto", sans-serif;
     margin-top: 10px;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .small__screen {
+    display: flex;
+    justify-content: center;
+  }
+  .welcome__photo {
+    margin: auto;
+    img {
+      width: 300px;
+      height: auto;
+      max-width: 100%;
+      max-width: 100%;
+      margin: 140px 5px 0 5px;
+    }
+  }
+  #kongo1 {
+    margin-top: 10px;
+  }
+}

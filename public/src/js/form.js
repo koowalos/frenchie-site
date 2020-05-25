@@ -11,7 +11,6 @@ $(".next-button").hover(function () {
 });
 
 $(".next-button.email").click(function () {
-  console.log("Something");
   $(".email-section").addClass("fold-up");
   $(".password-section").removeClass("folded");
 });
@@ -29,7 +28,6 @@ $(".next-button").hover(function () {
 });
 
 $(".next-button.password").click(function () {
-  console.log("Something");
   $(".password-section").addClass("fold-up");
   $(".repeat-password-section").removeClass("folded");
 });
@@ -43,7 +41,6 @@ $(".repeat-password").on("change keyup paste", function () {
 });
 
 $(".next-button.repeat-password").click(function () {
-  console.log("Something");
   $(".repeat-password-section").addClass("fold-up");
   $(".success").css("marginTop", 0);
 });
